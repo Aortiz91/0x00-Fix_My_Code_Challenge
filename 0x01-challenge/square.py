@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 """
-square class
+Fix my code - Square class
 """
 
 
-class square():
-    """ square """
-
+class Square():
+    """ Square """
     width = 0
     height = 0
 
@@ -16,11 +15,11 @@ class square():
             setattr(self, key, value)
 
     def area_of_my_square(self):
-        """ Area of the square """
+        """ Area of Square """
         return self.width * self.height
 
-    def PermiterOfMySquare(self):
-        """ Perimeter of the square """
+    def permiter_of_my_square(self):
+        """ Perimeter of Square """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
@@ -29,7 +28,7 @@ class square():
 
 
 if __name__ == "__main__":
-    s = square(width=12, height=9)
+    s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
-    print(s.PermiterOfMySquare())
+    print(s.permiter_of_my_square())
